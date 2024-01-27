@@ -20,7 +20,7 @@ def get_full_timestamp(millis):
 # Read the video from specified path
 parser = argparse.ArgumentParser()
 parser.add_argument('file', type=str)
-parser.add_argument('-c', '--captures-per-second', type=int, default=2)
+parser.add_argument('-c', '--captures-per-second', type=int, default=60)
 parser.add_argument('-q', '--quality', type=int, default=100)
 args = parser.parse_args()
 file_path = args.file
